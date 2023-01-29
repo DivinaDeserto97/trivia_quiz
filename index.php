@@ -34,6 +34,7 @@ $pageID = 0;
             <label for='questionNumber'>The number of question:</label>
             <input type='number' name='question_number' min='2' max='40' value=''></input>
         </section>
+        <input type='hidden' name='referenz' value='0'></input>
         <?php require ('./includes/php/footer.php'); ?>
     </form>
 </body>

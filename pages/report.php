@@ -1,7 +1,11 @@
 <?php 
     require ('./../includes/php/session.php');
-    $pageID = 41;
-
+    if (isset($_POST['referenz'])){
+        print_r($_POST);
+        $pageID = 41;
+    } else {
+        $pageID = 42;
+    }
 ?>
 <!DOCTYPE html>
 <html lang='en'>
@@ -15,15 +19,10 @@
 </head>
 <body>
     <?php
-        if($pageID === 42){
-            echo "<h1 class='d-flex justify-content-center'>Somtig is rong</h1>";
-            echo "<h2><a href='/index.php'>try it agan</a></h2>";
-        }
-        echo "$rmax $start $pageID <br>";
-        $thema = $_POST['question_number'];
+        $thema = $_POST['thema'];
         require ('./../includes/php/db.php');
         require ('./../includes/php/haeder.php');
-        $query = $dbConnection->query("SELECT * FROM `Themen` WHERE `thema`= $thema");
+        $query = $dbConnection->query("SELECT * FROM `Themen` WHERE `thema`= '$thema'");
         while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
             $value = $row['thema'];
             echo "<p>$value</p>";
