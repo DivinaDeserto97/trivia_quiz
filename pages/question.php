@@ -1,10 +1,12 @@
 <?php 
     require ('./../includes/php/session.php');
     require('./../includes/php/db.php');
+    require('./../includes/php/tools.php');
+    print "POST =       #";
     print_r($_POST);
     print "<br>";
+    print "SESSION =    #";
     print_r($_SESSION);
-    print "<br>";
     if (isset($_POST['referenz'])){
         if($_POST['referenz'] === '0'){
             $thema = $_POST['thema'];
@@ -15,7 +17,7 @@
             $minDB = $ThemenRow['thema-id-von'];
             $questionTotal = $maxDB - $minDB;
 
-            $question_number = number_format($_POST['question_number']);
+            $question_number = intval($_POST['question_number']);
             $max = min($question_number, $questionTotal);
             $random = rand(0 , $max);
             $start = $minDB + $random;
@@ -36,7 +38,7 @@
             $q = number_format($_POST['question']) + 1;
             print "<br>";
             print "$q";
-            /* $_SESSION[$pageID] = $question["$_POST"]; */
+            $_SESSION[$q] = $_POST;
             if($q == $question_number){
                 $link = './report.php';
             } else {
