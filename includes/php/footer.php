@@ -1,4 +1,4 @@
-<footer class='row'>
+<footer class='row footer-light'>
     <div class='col-1'>
     <?php 
         if (($pageID > 0) && ($pageID != 41)){
@@ -12,7 +12,7 @@
         <?php
         if(($pageID === 0)||($pageID > 40)){
             $Y = date('Y');
-            echo "©$Y";
+            echo "©Tobias$Y";
         } else {
             $a = 'in arbiet';
             $Y = date('Y');
@@ -26,7 +26,7 @@
             echo "<button type='submit' class='btn btn-light'>
                     <i class='fa-solid fa-circle-play'></i>
                   </button>";
-        } elseif (($pageID > 0) &&($pageID <= 40)){
+        } elseif (($pageID > 0)){
             echo "<button type='submit' class='btn btn-light'>
                     <i class='fa-solid fa-circle-chevron-right'></i>
                   </button>";

@@ -1,7 +1,9 @@
-<header class='row'>
-    <div class='col-1 d-flex justify-content-start'>
+<header class='row haeder-light'>
+    <div class='col-1 d-flex justify-content-start'> 
         <button class='btn btn-light'>
-            <i class='fa-sharp fa-solid fa-house'></i>
+            <a href='./../../index.php' style='color: black;'>
+                <i class='fa-sharp fa-solid fa-house'></i>
+            </a>
         </button>
     </div>
     <div class='col d-flex justify-content-center'>
