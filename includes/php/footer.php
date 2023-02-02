@@ -2,7 +2,7 @@
     <div class='col-1'>
     <?php 
         if (($pageID > 0) && ($pageID != 41)){
-            echo "<button class='btn btn-light' onclick='deleteAllCookies()'>
+            echo "<button type='button' class='btn btn-light' onclick='deleteAllCookies()'>
                     <i class='fa-solid fa-ban'></i>
                   </button>";
         }

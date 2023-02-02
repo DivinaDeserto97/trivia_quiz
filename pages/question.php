@@ -1,12 +1,7 @@
-<?php 
+<?php
     require ('./../includes/php/session.php');
     require('./../includes/php/db.php');
     require('./../includes/php/tools.php');
-    print "POST =       #";
-    print_r($_POST);
-    print "<br>";
-    print "SESSION =    #";
-    print_r($_SESSION);
     if (isset($_POST['referenz'])){
         if($_POST['referenz'] === '0'){
             $thema = $_POST['thema'];
@@ -24,21 +19,19 @@
             $pageID = $start;
             $lastID = $start + $question_number;
             $q = number_format($_POST['question']);
-            print "<br>";
-            print "$q";
             if($q === $question_number){
                 $link = './report.php';
             } else {
                 $link = './question.php';
             }
         } else {
+            $thema = $_POST['thema'];
             $question_number = number_format($_POST['question_number']);
             $pageID = 1 + number_format($_POST['beforID']);
             $lastID = number_format($_POST['lastID']);
             $q = number_format($_POST['question']) + 1;
-            print "<br>";
-            print "$q";
             $_SESSION[$q] = $_POST;
+;
             if($q == $question_number){
                 $link = './report.php';
             } else {
@@ -61,11 +54,10 @@
     <?php require ('./../includes/php/srcUp.php'); ?>
 </head>
 <body>
+    <?php require ('./../includes/php/haeder.php');?>
     <form action=<?php print $link; ?> method='post'>
         <?php
-            require ('./../includes/php/haeder.php');
-
-
+            
             $row = fetchQuestionByID($pageID, $dbConnection);
             $question = $row['question_text'];
         
@@ -90,6 +82,7 @@
         <input type='hidden' name='lastID' value=<?php print $lastID; ?>></input>
         <input type='hidden' name='beforID' value=<?php print $pageID; ?>></input>
         <input type='hidden' name='question' value=<?php print $q; ?>></input>
+        <input type='hidden' name='thema' value=<?php print $thema; ?>></input>
     </form>
 </body>
 <?php require ('./../includes/php/srcDown.php'); ?>
