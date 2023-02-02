@@ -14,7 +14,7 @@
 
             $question_number = intval($_POST['question_number']);
             $question_number = min($question_number, $questionTotal);
-            $random = rand(0 , $max);
+            $random = rand(0 , $question_number);
             $start = $minDB + $random;
             $pageID = $start;
             $lastID = $start + $question_number;
