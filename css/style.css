@@ -1,0 +1,12 @@
+:root{
+    --background-color-light: rgb(255, 255, 255);
+}
+body{
+    background-color: rgb(255 , 0 , 0);
+}
+.haeder-light{
+    background-color: var(--background-color-light);
+}
+.footer{
+    background-color: var(--background-color-light);
+}

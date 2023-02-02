@@ -12,20 +12,14 @@ $pageID = 0;
     <title>Trivie Quiz</title>
     <?php require ('./includes/php/srcUp.php'); ?>
 
-    <style>
-        .footer-light{
-            position: bottom;
-            bottom: 0;
-            background-color: rgb(0, 0, 255);
-        }
-    </style>
+
 </head>
 <body class='container'>
     <form action='./pages/question.php' method='post'>
         <?php
         require ('./includes/php/haeder.php');
         ?>
-        <section class='row'>
+        <section class='row' style='position: fixed; top:30%; left:0%; width: 100%;'>
             <h6>Choose thema:</h6>
             <div class='d-flex justify-content-center'>
             <?php

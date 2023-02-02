@@ -66,3 +66,19 @@ To remove everything, including images and orphan containers:
 ```
 $ docker-compose down -v --rmi all --remove-orphans
 ```
+
+# Abgabe
+
+## Github:
+
+https://github.com/DivinaDeserto97/trivia_quiz
+
+## Miror:
+https://miro.com/welcomeonboard/bDduMFREampYaHpsaUNHRVczWFNmek1rR1lZMGhFckRPaVZQWTd4aUJFOVlaaFRQNUs0aFExcExoekpNWkRaWnwzNDU4NzY0NTQzMDY0NzQ4MjU5fDI=?share_link_id=46174991126
+
+# Repo
+
+Ich hatt problem mit dem stylichen mir überschreibt es alles,
+der riset butten muss ich mit swenn mal anschauen da ich hab ihn aus dem allten projekt kopiert de ist die seinte abber nicht in einem pages ordner und ich wies nicht wie das lösen. für den toggel hate ich nicht die zeit die ich wolte und die bilder sind auch noch nicht gemacht.
+
+Aber alles in allem spanendes Projekt zum mit den sql zu spielen.

@@ -1,4 +1,4 @@
-<footer class='row footer-light'>
+<footer class='row footer-light' style='position: fixed; bottom: 0px; left: 15px; width: 100%;'>
     <div class='col-1'>
     <?php 
         if (($pageID > 0) && ($pageID != 41)){
