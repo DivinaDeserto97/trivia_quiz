@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Erstellungszeit: 02. Feb 2023 um 12:27
+-- Erstellungszeit: 02. Feb 2023 um 14:02
 -- Server-Version: 8.0.31
 -- PHP-Version: 8.0.19
 
@@ -271,6 +271,26 @@ INSERT INTO `questions` (`id`, `topic`, `question_text`, `answer-1`, `answer-2`,
 (10026, 'music', 'The most famous Hammond Organs generate the frequencies mechanically and convert them to current by a process called… ', 'wavetable synthesis', 'electromagnetic induction', 'frequency modulation (fm)', 'subtractive synthesis', 'stepdown transformation', 'answer-2'),
 (10027, 'music', 'Johann Sebastian Bach was a composer and musician of which musical period?', 'Post-Modernism', 'Classical Period', 'Renaissance', 'Barock', 'Romantic Period', 'answer-4'),
 (10028, 'music', 'Which city is Techno said to originate from?', 'New York', 'Chicago', 'Detroit', 'Manchester', 'Houston', 'answer-3');
+
+--
+-- Indizes der exportierten Tabellen
+--
+
+--
+-- Indizes für die Tabelle `questions`
+--
+ALTER TABLE `questions`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT für exportierte Tabellen
+--
+
+--
+-- AUTO_INCREMENT für Tabelle `questions`
+--
+ALTER TABLE `questions`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10029;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
