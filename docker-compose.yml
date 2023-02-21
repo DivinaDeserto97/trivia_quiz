@@ -36,8 +36,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: library
-      MYSQL_USER: mysql
-      MYSQL_PASSWORD: mysql
+      MYSQL_USER: webDev
+      MYSQL_PASSWORD: webDev
     volumes:
       - ./docker/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
       - db_data:/var/lib/mysql
