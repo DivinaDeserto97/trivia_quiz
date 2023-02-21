@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql
--- Erstellungszeit: 02. Feb 2023 um 14:02
+-- Erstellungszeit: 21. Feb 2023 um 15:07
 -- Server-Version: 8.0.31
 -- PHP-Version: 8.0.19
 
@@ -290,7 +290,7 @@ ALTER TABLE `questions`
 -- AUTO_INCREMENT für Tabelle `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10029;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
