@@ -1,4 +1,4 @@
-<?php
+<?php // bla
     require ('./../includes/php/session.php');
     require('./../includes/php/db.php');
     require('./../includes/php/tools.php');
